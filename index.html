@@ -1,1 +1,152 @@
-# angl.mova2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Learn English</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Learn English</h1>
+  <p>Simple and beautiful English learning platform</p>
+</header>
+
+<section class="alphabet page">
+  <h2>English Alphabet</h2>
+  <div class="letters">
+    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+  </div>
+</section>
+
+<section class="rules page">
+  <h2>Basic Grammar Rules</h2>
+  <ul>
+    <li>Start each sentence with a capital letter.</li>
+    <li>Use "A" before consonant sounds, "An" before vowel sounds.</li>
+    <li>He / She / It uses the verb with "-s".</li>
+    <li>Every English sentence must have a subject.</li>
+    <li>Adjectives do not change form.</li>
+  </ul>
+</section>
+
+<section class="vocabulary page">
+  <h2>Basic Vocabulary</h2>
+  <div class="words">
+    <div class="word-card">Hello — Привіт</div>
+    <div class="word-card">Thank you — Дякую</div>
+    <div class="word-card">Please — Будь ласка</div>
+    <div class="word-card">Goodbye — До побачення</div>
+    <div class="word-card">Yes — Так</div>
+    <div class="word-card">No — Ні</div>
+  </div>
+</section>
+
+<section class="menu page">
+  <h2>Choose a Quiz</h2>
+  <button onclick="showQuiz('quiz1')">Alphabet Quiz</button>
+  <button onclick="showQuiz('quiz2')">Grammar Quiz</button>
+  <button onclick="showQuiz('quiz3')">Vocabulary Quiz</button>
+</section>
+
+<section id="quiz1" class="quiz">
+  <h2>Alphabet Quiz</h2>
+
+  <p class="question">1. Which letter comes after C?</p>
+  <button onclick="checkAnswer(this, true, 'r1')">D</button>
+  <button onclick="checkAnswer(this, false, 'r1')">E</button>
+  <div id="r1"></div>
+
+  <p class="question">2. Which letter comes before F?</p>
+  <button onclick="checkAnswer(this, true, 'r2')">E</button>
+  <button onclick="checkAnswer(this, false, 'r2')">G</button>
+  <div id="r2"></div>
+
+  <p class="question">3. Which is a vowel?</p>
+  <button onclick="checkAnswer(this, true, 'r3')">A</button>
+  <button onclick="checkAnswer(this, false, 'r3')">B</button>
+  <div id="r3"></div>
+
+  <p class="question">4. Which letter is last?</p>
+  <button onclick="checkAnswer(this, true, 'r4')">Z</button>
+  <button onclick="checkAnswer(this, false, 'r4')">X</button>
+  <div id="r4"></div>
+
+  <div id="scoreBox1" class="score-box">
+    Score: 0
+  </div>
+
+  <button class="back" onclick="backToMenu()">Back to Menu</button>
+</section>
+
+<section id="quiz2" class="quiz">
+  <h2>Grammar Quiz</h2>
+
+<p class="question">1. Choose the correct sentence:</p>
+  <button onclick="checkAnswer(this, true, 'g1')">He plays football.</button>
+  <button onclick="checkAnswer(this, false, 'g1')">He play football.</button>
+  <div id="g1"></div>
+
+  <p class="question">2. Choose the correct article:</p>
+  <button onclick="checkAnswer(this, true, 'g2')">An apple</button>
+  <button onclick="checkAnswer(this, false, 'g2')">A apple</button>
+  <div id="g2"></div>
+
+  <p class="question">3. Choose the correct form:</p>
+  <button onclick="checkAnswer(this, true, 'g3')">She likes tea.</button>
+  <button onclick="checkAnswer(this, false, 'g3')">She like tea.</button>
+  <div id="g3"></div>
+
+  <p class="question">4. Choose the correct word order:</p>
+  <button onclick="checkAnswer(this, true, 'g4')">I am happy.</button>
+  <button onclick="checkAnswer(this, false, 'g4')">Happy I am.</button>
+  <div id="g4"></div>
+
+  <div id="scoreBox2" class="score-box">
+    Score: 0
+  </div>
+
+  <button class="back" onclick="backToMenu()">Back to Menu</button>
+</section>
+
+<!-- QUIZ 3 -->
+<section id="quiz3" class="quiz">
+  <h2>Vocabulary Quiz</h2>
+
+  <p class="question">1. "Привіт" in English?</p>
+  <button onclick="checkAnswer(this, true, 'v1')">Hello</button>
+  <button onclick="checkAnswer(this, false, 'v1')">Goodbye</button>
+  <div id="v1"></div>
+
+  <p class="question">2. "Дякую" in English?</p>
+  <button onclick="checkAnswer(this, true, 'v2')">Thank you</button>
+  <button onclick="checkAnswer(this, false, 'v2')">Please</button>
+  <div id="v2"></div>
+
+  <p class="question">3. "Так" in English?</p>
+  <button onclick="checkAnswer(this, true, 'v3')">Yes</button>
+  <button onclick="checkAnswer(this, false, 'v3')">No</button>
+  <div id="v3"></div>
+
+  <p class="question">4. "До побачення" in English?</p>
+  <button onclick="checkAnswer(this, true, 'v4')">Goodbye</button>
+  <button onclick="checkAnswer(this, false, 'v4')">Hello</button>
+  <div id="v4"></div>
+
+  <div id="scoreBox3" class="score-box">
+    Score: 0
+  </div>
+
+  <button class="back" onclick="backToMenu()">Back to Menu</button>
+</section>
+
+<footer>
+  <h3>Contacts</h3>
+  <p>Telegram: <span class="tg">@II00000000000000</span></p>
+  <p>Email: englishlearn@gmail.com</p>
+  <p>&copy; 2025 English Learning Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
