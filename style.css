@@ -1,1 +1,172 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f7fb;
+  color: #222;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
 
+header {
+  padding: 60px 20px;
+  background: #4a90e2;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.alphabet {
+  padding: 40px 20px;
+}
+
+.alphabet .letters {
+  margin-top: 15px;
+  font-size: 34px;
+  letter-spacing: 5px;
+}
+
+.rules {
+  background: white;
+  padding: 40px;
+  margin: 30px auto;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.rules ul {
+  font-size: 20px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.vocabulary {
+  padding: 40px 20px;
+}
+
+.words {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.word-card {
+  background: white;
+  padding: 20px 25px;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.menu {
+  margin: 40px;
+}
+
+.menu button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.menu button:hover {
+  background: #357ab8;
+}
+
+.quiz {
+  display: none;
+  background: white;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s ease;
+}
+
+.quiz.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quiz h2 {
+  margin-bottom: 20px;
+}
+
+.quiz .question {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.quiz button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quiz button:hover {
+  background: #357ab8;
+}
+
+.back {
+  margin-top: 25px;
+  background: #222;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+footer .tg {
+  color: #4a90e2;
+}
+
+#r1, #r2, #r3, #r4,
+#g1, #g2, #g3, #g4,
+#v1, #v2, #v3, #v4 {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.score-box {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.page.hidden {
+  display: none;}
